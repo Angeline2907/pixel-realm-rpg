@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Adventure RPG</title>
+    <!-- Fonte Retro Estilo Pixel Art -->
+    <link href="https://googleapis.com" rel="stylesheet">
+    <!-- Link para o arquivo de estilização externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Efeito visual de Monitor de Tubo Antigo (CRT) -->
+    <div class="crt-effect"></div>
+
+    <div id="game-container">
+        
+        <!-- TELA DE CAPA (INICIAL) -->
+        <div id="cover-screen" class="screen">
+            <h1 class="game-title">CYBER REALM<br>RPG</h1>
+            <div class="pixel-art-bg"></div>
+            <button class="btn-retro" onclick="startAdventure()">INICIAR JOGO</button>
+        </div>
+
+        <!-- TELA INTERATIVA DA AVENTURA -->
+        <div id="adventure-screen" class="screen hidden">
+            <!-- Sprite Animado do Personagem -->
+            <div class="interactive-sprite"></div>
+
+            <!-- Caixa de Diálogo Dinâmica -->
+            <div id="rpg-dialogue-box" onclick="nextDialogue()">
+                <div class="speaker-name" id="speaker">Sábio Pixel:</div>
+                <div id="dialogue-text">Carregando crônicas...</div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Link para o arquivo de lógica do jogo -->
+    <script src="script.js"></script>
+</body>
+</html>
